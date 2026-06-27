@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+tistory:
+  blog-name: ${BLOG_NAME}
+  rss-url: ${BLOG_URL}
+
+#github:
+#  token: ${GITHUB_TOKEN}      # GitHub Personal Access Token (환경변수)
+#  owner: your-github-id
+#  repo: your-repo-name
+#  branch: main
+
+sync:
+  cron: "0 0 * * * *"        # 매 시간마다 실행 (cron 표현식)
+  recent-post-count: 5        # README에 보여줄 최신 글 수
