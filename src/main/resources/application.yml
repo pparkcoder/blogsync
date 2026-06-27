@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+tistory:
+  access-token: YOUR_TISTORY_TOKEN
+  blog-name: YOUR_BLOG_NAME
+
+github:
+  token: YOUR_GITHUB_TOKEN
+  repo: username/repo
+
+logging:
+  level:
+    root: info
