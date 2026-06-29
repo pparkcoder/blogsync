@@ -8,7 +8,7 @@ tistory:
 github:
   token: ${GITHUB_TOKEN}
   name: pparkcoder
-  repository: blogsync
+  repository: pparkcoder
   branch: main #README.md는 main 브랜치를 기준으로 읽어옴
 
 sync:
