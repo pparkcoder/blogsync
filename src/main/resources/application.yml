@@ -5,12 +5,12 @@ tistory:
   blog-name: ${BLOG_NAME}
   rss-url: ${BLOG_URL}
 
-#github:
-#  token: ${GITHUB_TOKEN}      # GitHub Personal Access Token (환경변수)
-#  owner: your-github-id
-#  repo: your-repo-name
-#  branch: main
+github:
+  token: ${GITHUB_TOKEN}
+  name: pparkcoder
+  repository: blogsync
+  branch: main #README.md는 main 브랜치를 기준으로 읽어옴
 
 sync:
-  cron: "0 0 * * * *"        # 매 시간마다 실행 (cron 표현식)
-  recent-post-count: 5        # README에 보여줄 최신 글 수
+  cron: "0 0 * * * *"
+  recent-post-count: 5 # README에 보여줄 최신 글 수
