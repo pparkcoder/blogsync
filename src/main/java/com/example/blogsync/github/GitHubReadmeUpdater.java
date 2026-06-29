@@ -20,8 +20,9 @@ public class GitHubReadmeUpdater {
 		String currentReadme = githubService.getCurrentReadme();
 		String updatedReadme = replaceBlogSection(currentReadme, posts);
 
-		if (currentReadme.equals(updatedReadme))
+		if (currentReadme.equals(updatedReadme)) {
 			return; // 변경사항 없는 경우 업데이트 미진행
+		}
 
 		githubService.updateReadme(updatedReadme);
 	}
@@ -41,10 +42,9 @@ public class GitHubReadmeUpdater {
 	private String buildBlogSection(List<TistoryPost> posts) {
 		StringBuilder sb = new StringBuilder();
 		posts.forEach(post ->
-			sb.append(String.format("- [%s](%s) - %s\n",
+			sb.append(String.format("- [%s](%s)\n",
 				post.getTitle(),
-				post.getLink(),
-				post.getPublishedAt().toLocalDate()))
+				post.getLink()))
 		);
 		return sb.toString();
 	}
